@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, Injectable } from '@angular/core';
+import  API  from 'src/app/api.json';
+
+@Injectable()
 
 @Component({
   selector: 'app-all-products',
@@ -8,13 +10,10 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class AllProductsComponent {
-  products : any;
+  products : any = API;
+  productQuantity : number = 0;
 
-  constructor(private http: HttpClient) {
-    const LinkAPI = "https://fakestoreapi.com/products";
-    this.http.get(LinkAPI).subscribe((data) => {
-      this.products = data;
-      localStorage.setItem("products", JSON.stringify(this.products));
-    });
-  };
+  addToCart(product : any): void {
+    this.productQuantity += 1;
+  }
 };
