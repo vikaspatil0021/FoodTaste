@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'FoodTaste';
+  productQuantity : number = 0;
+
+  setProductQuantity(value : number): void {
+    this.productQuantity = value;
+  };
 }

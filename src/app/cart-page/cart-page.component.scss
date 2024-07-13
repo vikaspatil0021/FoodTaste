@@ -5,15 +5,17 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.399);
+    background: rgba(0, 0, 0, 0.517);
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
+    cursor: default;
     .cartPage {
         background: white;
         height: 100%;
         width: 600px;
+        border-top-left-radius: 25px;
         .heading {
             display: flex;
             align-items: center;
@@ -24,5 +26,98 @@
                 cursor: pointer;
             }
         }
+        .products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 25px;
+            overflow-y: scroll;
+            height: 91%;
+            & .product {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                & img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    flex: 1;
+                    padding: 0 0 0 20px;
+                    .textHeading {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 3px;
+                        & h3 {
+                            margin: 0;
+                        }
+                        .category {
+                            color: grey;
+                        }
+                    }
+                    & span {
+                        color: rgb(0, 153, 0);
+                    }
+                }
+                & svg {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 665px) {
+    .cartBackground {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        .cartPage {
+            width: 100%;
+            height: 80%;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+            .products {
+                height: 89%;
+            }
+        }
+    }
+};
+@media screen and (max-width: 400px) {
+    .cartBackground {
+        .cartPage {
+            .products {
+                .product {
+                    & img {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    &__text {
+                        & .textHeading {
+                            h3 {
+                                font-size: 1rem;
+                            }
+                            .category {
+                                font-size: 0.9rem;
+                            }
+                        }
+                        span {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};

@@ -1,4 +1,4 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, EventEmitter, Injectable, Output } from '@angular/core';
 import  API  from 'src/app/api.json';
 
 @Injectable()
@@ -11,9 +11,16 @@ import  API  from 'src/app/api.json';
 
 export class AllProductsComponent {
   products : any = API;
+  productsArr: Array<object> = [];
   productQuantity : number = 0;
 
-  addToCart(product : any): void {
+  @Output()
+  onButtonClick : EventEmitter<number> = new EventEmitter<number>();
+
+  addToCart(product : any) {
     this.productQuantity += 1;
+    this.productsArr.push(product);
+    localStorage.setItem("products", JSON.stringify(this.productsArr));
+    this.onButtonClick.emit(this.productQuantity);
   }
-};
+}

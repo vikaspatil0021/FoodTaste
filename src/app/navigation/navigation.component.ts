@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OnInit } from '@angular/core';
 
 @Component({
@@ -14,4 +14,14 @@ export class NavigationComponent implements OnInit {
     let allProducts : any = localStorage.getItem("products");
     this.products = JSON.parse(allProducts);
   };
+
+  filterSearchSymbols(input:any): void {
+    const regex = /[^a-z\s]/gi;
+    const regexStart = /^ +/g;
+    input.value = input.value.replace(regex, '');
+    input.value = input.value.replace(regexStart, '');
+  };
+
+  @Input()
+  productQuantity : number = 0;
 };

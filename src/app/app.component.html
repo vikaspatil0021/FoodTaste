@@ -1,2 +1,2 @@
-<app-navigation></app-navigation>
-<app-all-products></app-all-products>
+<app-navigation [productQuantity]="productQuantity" ></app-navigation>
+<app-all-products (onButtonClick)="setProductQuantity($event)"></app-all-products>

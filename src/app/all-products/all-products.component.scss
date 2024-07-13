@@ -5,6 +5,9 @@
     width: 80vw;
     padding-top: 40px;
     .product {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         padding: 20px;
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.666);
@@ -22,9 +25,19 @@
             object-fit: cover;
             border-radius: 20px;
         }
-        &__title {
-            font-size: 1.3rem;
-            text-transform: uppercase;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            & .title {
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            & .category {
+                font-size: 1.2rem;
+                color: rgb(157, 157, 157);
+            }
         }
         &__info {
             display: flex;
@@ -32,6 +45,12 @@
             justify-content: space-between;
             & svg {
                 cursor: pointer;
+                &:hover {
+                    color: rgba(0, 255, 0, 0.749);
+                    transform: scale(1.1);
+                    transform: rotateZ(90deg);
+                    transition: 250ms;
+                }
             }
         }
         &__price {

@@ -1,7 +1,10 @@
 <div class="allProducts">
     <div class="product" *ngFor="let product of products" >
         <img class="product__img" src="{{product.image}}" alt="" srcset="">
-        <h2 class="product__title">{{product.title}}</h2>
+        <div class="product__text">
+            <h2 class="title">{{product.title}}</h2>
+            <span class="category">{{product.category.slice(0, -1)}}</span>
+        </div>
         <div class="product__info">
             <span class="product__price">{{product.price}}$</span>
             <svg (click)="addToCart(product)" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16" id="svg">
