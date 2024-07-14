@@ -1,2 +1,2 @@
-<app-navigation [productQuantity]="productQuantity" ></app-navigation>
-<app-all-products (onButtonClick)="setProductQuantity($event)"></app-all-products>
+<app-navigation (onSearchInput)="setSearchValue($event)" [productQuantity]="productQuantity"></app-navigation>
+<app-all-products  [searchValue]="searchValue" (onButtonClick)="setProductQuantity($event)"></app-all-products>

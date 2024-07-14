@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Injectable, Output } from '@angular/core';
+import { Component, EventEmitter, Injectable, Input, Output } from '@angular/core';
 import  API  from 'src/app/api.json';
 
 @Injectable()
@@ -13,7 +13,8 @@ export class AllProductsComponent {
   products : any = API;
   productsArr: Array<object> = [];
   productQuantity : number = 0;
-
+  regex : RegExp = /[^A-Z ]/gi;
+  
   @Output()
   onButtonClick : EventEmitter<number> = new EventEmitter<number>();
 
@@ -22,5 +23,25 @@ export class AllProductsComponent {
     this.productsArr.push(product);
     localStorage.setItem("products", JSON.stringify(this.productsArr));
     this.onButtonClick.emit(this.productQuantity);
-  }
+  };
+
+  searchProduct(product : any): any {
+    if
+    (
+    this.searchValue.match(this.regex) ||
+    product.title.toLowerCase().includes(this.searchValue.toLowerCase()) ||
+    product.title.toUpperCase().includes(this.searchValue.toUpperCase()) ||
+    product.title.toLowerCase().includes(this.searchValue) ||
+    product.title.toUpperCase().includes(this.searchValue)
+    )
+    {
+      return 'flex';
+    }
+    else {
+      return 'none';
+    }
+  };
+  
+  @Input()
+  searchValue : string = '';
 }

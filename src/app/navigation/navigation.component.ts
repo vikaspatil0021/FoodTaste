@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { OnInit } from '@angular/core';
 
 @Component({
@@ -6,20 +6,22 @@ import { OnInit } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
+
 export class NavigationComponent implements OnInit {
-  value : string = "";
+  searchValue : string = '';
   products : any;
+  regex : RegExp = /[^A-Z ]/gi;
+
+  @Output()
+  onSearchInput : EventEmitter<string> = new EventEmitter<string>();
+
+  transferSearchValue(): void {
+    this.onSearchInput.emit(this.searchValue.trim());
+  };
 
   ngOnInit(): void {
     let allProducts : any = localStorage.getItem("products");
     this.products = JSON.parse(allProducts);
-  };
-
-  filterSearchSymbols(input:any): void {
-    const regex = /[^a-z\s]/gi;
-    const regexStart = /^ +/g;
-    input.value = input.value.replace(regex, '');
-    input.value = input.value.replace(regexStart, '');
   };
 
   @Input()

@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   productQuantity : number = 0;
+  searchValue : string = '';
 
   setProductQuantity(value : number): void {
     this.productQuantity = value;
+  };
+
+  setSearchValue(value : string): void {
+    this.searchValue = value;
   };
 }
