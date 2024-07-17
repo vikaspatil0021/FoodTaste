@@ -9,4 +9,12 @@ import { Component, Input } from '@angular/core';
 export class CartComponent {
   @Input()
   cartProductQuantity : number = 0;
+
+  @Input()
+  productsArr : Array<any> = [];
+
+  openCart(): void {
+    let cart = document.getElementById('cart');
+    cart?.classList.toggle('none');
+  };
 };

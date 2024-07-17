@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   productQuantity : number = 0;
   searchValue : string = '';
+  productsArr : Array<any> = [];
 
   setProductQuantity(value : number): void {
     this.productQuantity = value;
@@ -16,5 +17,9 @@ export class AppComponent {
 
   setSearchValue(value : string): void {
     this.searchValue = value;
+  };
+
+  setCartProducts(value : any) {
+    this.productsArr = value;
   };
 }

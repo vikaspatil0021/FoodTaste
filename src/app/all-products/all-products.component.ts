@@ -11,18 +11,21 @@ import  API  from 'src/app/api.json';
 
 export class AllProductsComponent {
   products : any = API;
-  productsArr: Array<object> = [];
+  clickedProductsArr : Array<any> = [];
   productQuantity : number = 0;
   regex : RegExp = /[^A-Z ]/gi;
-  
+
   @Output()
   onButtonClick : EventEmitter<number> = new EventEmitter<number>();
 
+  @Output()
+  onAddToCartClick : EventEmitter<object> = new EventEmitter<object>();
+
   addToCart(product : any) {
+    this.clickedProductsArr.push(product);
     this.productQuantity += 1;
-    this.productsArr.push(product);
-    localStorage.setItem("products", JSON.stringify(this.productsArr));
     this.onButtonClick.emit(this.productQuantity);
+    this.onAddToCartClick.emit(this.clickedProductsArr);
   };
 
   searchProduct(product : any): any {

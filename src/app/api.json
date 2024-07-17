@@ -5,7 +5,7 @@
         "price": 30,
         "category": "Cakes",
         "description": "6-layers of vanilla cake baked with colorful sugar confetti, filled & frosted with our signature retro-blue vanilla frosting. Available in 6 or 9 sizes.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/115/785/PDP_lifestyle__0007_CELEB_9__96988__08613.1662993858.jpg?c=1"
+        "image": "assets/WebP/Vanilla Cake.webp"
     },
 
     {
@@ -14,7 +14,7 @@
         "price": 45,
         "category": "Cakes",
         "description": "Deep red, moist cake lightly flavored with cocoa, filled & topped with traditional cream cheese frosting. Available in 6 or 9 sizes.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/117/877/PDP_lifestyle__0002_RV_9__70883.1662994830.jpg?c=1"
+        "image": "assets/WebP/Velvet Cake.webp"
     },
 
     {
@@ -23,7 +23,7 @@
         "price": "35",
         "category": "Cakes",
         "description": "Four layers of vanilla cake filled with fresh lemon curd, frosted with vanilla buttercream. Available in 6 or 9 sizes.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/121/801/PDP_lifestyle__0005_LEMON_9__92816__78756.1662945727.jpg?c=1"
+        "image": "assets/WebP/Lemon Cake.webp"
     },
 
     {
@@ -32,7 +32,7 @@
         "price": "65",
         "category": "Cakes",
         "description": "Vanilla cake layered with pineapple accented coconut filling & topped with fluffy coconut buttercream & shredded coconut. Available in 6 or 9 sizes.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/120/799/PDP_lifestyle__0006_COCONUT_9__86569__73565.1678312387.jpg?c=1"
+        "image": "assets/WebP/Coconut Cake.webp"
     },
 
     {
@@ -41,7 +41,7 @@
         "price": "80",
         "category": "Cakes",
         "description": "Baked with pecans & golden raisins, layered with our unique “praline filling” & topped with traditional cream cheese frosting. Available in 6 or 9 sizes.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/118/795/PDP_lifestyle__0010_CARROT_9__14835__06178.1678312318.jpg?c=1"
+        "image": "assets/WebP/Carrot Cake.webp"
     },
 
     {
@@ -50,7 +50,7 @@
         "price": "15",
         "category": "Cupcakes",
         "description": "Get ready to taste the ultimate summer treat: our Strawberry Lemonade Cupcake! Fresh strawberries folded into our vanilla cake batter giving it that irresistible fruity twist.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/184/1632/PDP_Jun_CC_Strawberry-Lemonade_03__05204.1685126830.jpg?c=1"
+        "image": "assets/WebP/Lemonade Cupcake.webp"
     },
 
     {
@@ -59,7 +59,7 @@
         "price": "20",
         "category": "Cupcakes",
         "description": "Indulge in the deliciously sweet and tangy flavors of our Strawberry Cupcake! Made with a fluffy vanilla cupcake base, this irresistible treat is frosted with luscious strawberry buttercream",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/131/1233/PDP_Feb_CC_Strawberry_Main_V3__74711.1674175777.jpg?c=1"
+        "image": "assets/WebP/Strawberry Cupcake.webp"
     },
 
     {
@@ -68,7 +68,7 @@
         "price": "4.99",
         "category": "Cupcakes",
         "description": "Moist chocolate cupcake made with semi-sweet chocolate chips, frosted with real coffee-infused buttercream. — $4.99 each",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/133/1773/PDP_September_CC_Mocha_03__58819.1693452991.jpg?c=1"
+        "image": "assets/WebP/Mocha Cupcake.webp"
     },
 
     {
@@ -77,7 +77,7 @@
         "price": "8.99",
         "category": "Cupcakes",
         "description": "Delectable chocolate cupcake frosted with creamy peanut butter buttercream. — $8.99 each",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/130/2212/PDP_Everyday_CC_Peanut-Butter_03__14634.1712066640.jpg?c=1"
+        "image": "assets/WebP/Peanut Cupcake.webp"
     },
 
     {
@@ -86,7 +86,7 @@
         "price": "9.99",
         "category": "Cupcakes",
         "description": "Rich chocolate cupcake made with semi-sweet chocolate chips, frosted with natural peppermint buttercream — $9.99 each",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/129/2210/PDP_Everyday_CC_Mint_03__70762.1712066590.jpg?c=1"
+        "image": "assets/WebP/Mint Cupcake.webp"
     },
 
     {
@@ -95,7 +95,7 @@
         "price": "14",
         "category": "Cupcakes",
         "description": "Rich, dense chocolate cupcake topped with vanilla white buttercream. Made without gluten — $14 each",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/126/825/Flourless__67227__84243.1682657171.jpg?c=1"
+        "image": "assets/WebP/Chocolate Cupcake.webp"
     },
 
     {
@@ -104,7 +104,7 @@
         "price": "18.99",
         "category": "Cupcakes",
         "description": "Boy or Girl? Find out when you cut (or bite into) the cupcake! 4-box of cupcakes with your choice of SusiePink or SusieBlue buttercream on the inside.",
-        "image": "https://cdn11.bigcommerce.com/s-w6rae6i8cu/images/stencil/1280x1280/products/243/1756/PDP_Everyday_CC_Gender-Reveal_03__27474.1692133642.jpg?c=1"
+        "image": "assets/WebP/Gender Cupcake.webp"
     },
 
     {
@@ -113,7 +113,7 @@
         "price": "5",
         "category": "Icecreams",
         "description": "Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555352846661-7NJ3A6MF2Y6CTXLNNB8X/Bangin-Brownie.jpg?format=750w"
+        "image": "assets/WebP/Chocolate Icecream.webp"
     },
 
     {
@@ -122,7 +122,7 @@
         "price": "10",
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, cream cheese icing, birthday cake bits, rainbow sprinkles",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555352853143-QJ9EGVA5O2ZYKO48JLIZ/Birthday-Cake.jpg?format=750w"
+        "image": "assets/WebP/Vanilla Icecream.webp"
     },
 
     {
@@ -131,7 +131,7 @@
         "price": "15",
         "category": "Icecreams",
         "description": "Coconut soft serve ice cream, shredded toasted coconut, dark chocolate sauce",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555352856156-I4Y4M6MAFFF2NA1YF5U1/Bounty-Killah.jpg?format=750w"
+        "image": "assets/WebP/Coconut Icecream.webp"
     },
 
     {
@@ -140,7 +140,7 @@
         "price": "11.99",
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, Oreo cookies, chocolate chip cookies, Fudgee-o cookies, cookie dough chunks",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555353052279-7OMOKMNUL2MQAEFMY5V7/Cookies-Cookies-Cookies-and-Cream.jpg?format=750w"
+        "image": "assets/WebP/Cookies Icecream.webp"
     },
 
     {
@@ -149,7 +149,7 @@
         "price": "3",
         "category": "Icecreams",
         "description": "Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555353054651-GAIREMMELSAZ7DZ8XR6U/Hella-Nutella.jpg?format=750w"
+        "image": "assets/WebP/Hazelnut Icecream.webp"
     },
 
     {
@@ -158,7 +158,7 @@
         "price": "20",
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555353056878-0DNC4UKL2OQKVTXO04FN/Krusty-The-Cone.jpg?format=750w"
+        "image": "assets/WebP/Cotton Icecream.webp"
     },
 
     {
@@ -167,7 +167,7 @@
         "price": "13.99",
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, red velvet cake, cream cheese icing, raspberry sauce, red berry crumble",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555354965355-BKBTJ5JSDZY3CIL681AN/Red-Rapture.jpg?format=750w"
+        "image": "assets/WebP/Velvet Icecream.webp"
     },
 
     {
@@ -176,6 +176,6 @@
         "price": "7",
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, peanut butter sauce, caramel sauce, chocolate peanut crumble, chocolate sauce",
-        "image": "https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1555354969386-LOHLBO9BEJ1I1WYU04PO/Oh+Hungry.jpg?format=750w"
+        "image": "assets/WebP/Peanut Icecream.webp"
     }
 ]

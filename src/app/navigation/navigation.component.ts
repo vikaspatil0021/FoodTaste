@@ -26,4 +26,7 @@ export class NavigationComponent implements OnInit {
 
   @Input()
   productQuantity : number = 0;
+
+  @Input()
+  productsArr : Array<object> = [];
 };

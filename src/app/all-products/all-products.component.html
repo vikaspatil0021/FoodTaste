@@ -1,6 +1,6 @@
 <div class="allProducts">
     <div class="product" *ngFor="let product of products" [ngStyle]="{display: searchProduct(product)}">
-        <img class="product__img" src="{{product.image}}" alt="" srcset="">
+        <img class="product__img" alt="" src="{{product.image}}" loading="lazy">
         <div class="product__text">
             <h2 class="title">{{product.title}}</h2>
             <span class="category">{{product.category.slice(0, -1)}}</span>

@@ -14,3 +14,15 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+    background: rgba(59, 56, 56, 0.352);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(86, 81, 81);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(58, 54, 54);
+}
