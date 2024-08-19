@@ -24,6 +24,7 @@ export class AllProductsComponent {
   addToCart(product : any) {
     this.clickedProductsArr.push(product);
     this.productQuantity += 1;
+    localStorage.setItem('productQuantity', JSON.stringify(this.productQuantity));
     this.onButtonClick.emit(this.productQuantity);
     this.onAddToCartClick.emit(this.clickedProductsArr);
   };

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -6,9 +6,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 
-export class CartComponent {
+export class CartComponent implements OnInit {
+
   @Input()
   cartProductQuantity : number = 0;
+
+  ngOnInit() {
+    let productQuantity = localStorage.getItem('productQuantity');
+    if(productQuantity) {
+      this.cartProductQuantity = JSON.parse(productQuantity);
+    };
+  };
 
   @Input()
   productsArr : Array<any> = [];
