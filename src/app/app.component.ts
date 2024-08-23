@@ -10,6 +10,7 @@ export class AppComponent {
   productQuantity : number = 0;
   searchValue : string = '';
   productsArr : Array<any> = [];
+  productsArrLength : number = 0;
 
   setProductQuantity(value : number): void {
     this.productQuantity = value;
@@ -21,5 +22,9 @@ export class AppComponent {
 
   setCartProducts(value : any) {
     this.productsArr = value;
+  };
+
+  reciveProductsLength($event : number) {
+    this.productsArrLength = $event;
   };
 }

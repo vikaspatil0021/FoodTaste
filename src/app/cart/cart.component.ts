@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -13,8 +13,12 @@ export class CartComponent implements OnInit {
     this.showCartPage = !this.showCartPage;
   };
 
-  reciveProductsInfo($event : number) {
+  @Output()
+  sendProductsLength : EventEmitter<number> = new EventEmitter();
+
+  reciveProductsLength($event : number) {
     this.cartProductQuantity = $event;
+    this.sendProductsLength.emit($event);
   };
 
   @Input()

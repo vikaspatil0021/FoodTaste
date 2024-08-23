@@ -14,16 +14,16 @@ export class CartPageComponent implements OnInit {
   @Input()
   productsArr : Array<any> = [];
 
-  @Output() sendProductsInfo : EventEmitter<number> = new EventEmitter();
+  @Output()
+  sendProductsLength : EventEmitter<number> = new EventEmitter();
 
   ngOnInit(): void {
     this.productsArrLength = this.productsArr.length;
-    this.sendProductsInfo.emit(this.productsArrLength);
   };
 
   removeProduct(product : any): void {
     this.productsArrLength = this.productsArrLength - 1;
-    this.sendProductsInfo.emit(this.productsArrLength);
+    this.sendProductsLength.emit(this.productsArrLength);
     let productIndex = this.productsArr.indexOf(product);
     this.productsArr.splice(productIndex, 1);
   };

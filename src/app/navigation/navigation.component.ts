@@ -15,8 +15,15 @@ export class NavigationComponent implements OnInit {
   @Output()
   onSearchInput : EventEmitter<string> = new EventEmitter<string>();
 
+  @Output() 
+  sendProductsLength : EventEmitter<number> = new EventEmitter();
+
   transferSearchValue(): void {
     this.onSearchInput.emit(this.searchValue.trim());
+  };
+  
+  reciveProductsLength($event : number) {
+    this.sendProductsLength.emit($event);
   };
 
   ngOnInit(): void {
