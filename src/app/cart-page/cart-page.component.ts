@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart-page',
@@ -6,17 +6,20 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cart-page.component.scss']
 })
 
-export class CartPageComponent {
+export class CartPageComponent implements OnInit {
+  productQuantity : number = 1;
+
+  @Input()
+  productsArr : Array<any> = [];
+
   removeProduct(product : any): void {
     let productDiv = document.getElementById(`${product.id}`);
     productDiv?.remove();
   };
 
-  closeCart(): void {
-    let cart = document.getElementById('cart');
-    cart?.classList.toggle('none');
-  };
+  @Output() sendProductsInfo : EventEmitter<boolean> = new EventEmitter();
 
-  @Input()
-  productsArr : Array<any> = [];
-};
+  ngOnInit(): void {
+    console.log('Loaded!')
+  }
+}

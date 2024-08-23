@@ -7,22 +7,24 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class CartComponent implements OnInit {
+  showCartPage : boolean = false;
 
+  toggleCartPage() {
+    this.showCartPage = !this.showCartPage;
+  };
+  
   @Input()
   cartProductQuantity : number = 0;
-
-  ngOnInit() {
-    let productQuantity = localStorage.getItem('productQuantity');
-    if(productQuantity) {
-      this.cartProductQuantity = JSON.parse(productQuantity);
-    };
-  };
 
   @Input()
   productsArr : Array<any> = [];
 
-  openCart(): void {
-    let cart = document.getElementById('cart');
-    cart?.classList.toggle('none');
+  ngOnInit() {
+    let clickedProductsArr : any = localStorage.getItem('clickedProductsArr');
+    if(clickedProductsArr) {
+      this.cartProductQuantity = JSON.parse(clickedProductsArr).length;
+    } else {
+      this.cartProductQuantity = 0;
+    };
   };
 };

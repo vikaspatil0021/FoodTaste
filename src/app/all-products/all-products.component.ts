@@ -12,7 +12,7 @@ import  API  from 'src/app/api.json';
 export class AllProductsComponent {
   products : any = API;
   clickedProductsArr : Array<any> = [];
-  productQuantity : number = 0;
+  productQuantity : any = 0;
   regex : RegExp = /[^A-Z ]/gi;
 
   @Output()
@@ -25,6 +25,7 @@ export class AllProductsComponent {
     this.clickedProductsArr.push(product);
     this.productQuantity += 1;
     localStorage.setItem('productQuantity', JSON.stringify(this.productQuantity));
+    localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
     this.onButtonClick.emit(this.productQuantity);
     this.onAddToCartClick.emit(this.clickedProductsArr);
   };
