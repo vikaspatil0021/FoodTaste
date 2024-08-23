@@ -12,7 +12,11 @@ export class CartComponent implements OnInit {
   toggleCartPage() {
     this.showCartPage = !this.showCartPage;
   };
-  
+
+  reciveProductsInfo($event : number) {
+    this.cartProductQuantity = $event;
+  };
+
   @Input()
   cartProductQuantity : number = 0;
 
@@ -21,7 +25,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     let clickedProductsArr : any = localStorage.getItem('clickedProductsArr');
-    if(clickedProductsArr) {
+    if(clickedProductsArr && this.cartProductQuantity !== 0) {
       this.cartProductQuantity = JSON.parse(clickedProductsArr).length;
     } else {
       this.cartProductQuantity = 0;
