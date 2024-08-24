@@ -12,20 +12,26 @@ export class CartPageComponent implements OnInit {
   showCartPage : boolean = false;
 
   @Input()
-  productsArr : Array<any> = [];
+  productsArr : any = [];
 
   @Output()
   sendProductsLength : EventEmitter<number> = new EventEmitter();
 
   ngOnInit(): void {
+    let clickedProductsArr = localStorage.getItem('clickedProductsArr');
+    if(clickedProductsArr) {
+      this.productsArr = JSON.parse(clickedProductsArr);
+    }
     this.productsArrLength = this.productsArr.length;
   };
 
   removeProduct(product : any): void {
-    this.productsArrLength = this.productsArrLength - 1;
+    this.productsArrLength -= 1;
+    localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
     this.sendProductsLength.emit(this.productsArrLength);
     let productIndex = this.productsArr.indexOf(product);
     this.productsArr.splice(productIndex, 1);
+    localStorage.setItem('clickedProductsArr', JSON.stringify(this.productsArr));
   };
 
   toggleCartPage() {

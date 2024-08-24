@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Injectable, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Injectable, Input, OnInit, Output } from '@angular/core';
 import  API  from 'src/app/api.json';
 
 @Injectable()
@@ -9,39 +9,54 @@ import  API  from 'src/app/api.json';
   styleUrls: ['./all-products.component.scss']
 })
 
-export class AllProductsComponent {
+export class AllProductsComponent implements OnInit {
   products : any = API;
-  clickedProductsArr : Array<any> = [];
+  clickedProductsArr : any = [];
   productQuantity : any = 0;
   regex : RegExp = /[^A-Z ]/gi;
-  
-  @Output()
-  onButtonClick : EventEmitter<number> = new EventEmitter<number>();
-
-  @Output()
-  onAddToCartClick : EventEmitter<object> = new EventEmitter<object>();
 
   @Input()
   searchValue : string = '';
 
   @Input()
   productsArrLength : number = 0;
-  
-  addToCart(product : any) {
-    this.clickedProductsArr.push(product);
-    localStorage.setItem('productQuantity', JSON.stringify(this.productQuantity));
-    localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
-    if(this.productsArrLength !== 0) {
-      this.productsArrLength += 1;
-      this.onButtonClick.emit(this.productsArrLength);
-      if(this.productQuantity === this.productsArrLength) {
-        this.onButtonClick.emit(10);
-      }
-    } else {
-      this.productQuantity += 1;
-      this.onButtonClick.emit(this.productQuantity);
+
+  @Output()
+  onButtonClick : EventEmitter<number> = new EventEmitter<number>();
+
+  @Output()
+  onAddToCartClick : EventEmitter<object> = new EventEmitter<object>();
+
+  ngOnInit(): void {
+    let productsLengthStorage = localStorage.getItem('productsArrLength');
+    let clickedProductsArr = localStorage.getItem('clickedProductsArr');
+    if(clickedProductsArr) {
+      this.clickedProductsArr = JSON.parse(clickedProductsArr);
     }
+    if(productsLengthStorage) {
+      this.productsArrLength = JSON.parse(productsLengthStorage);
+    }
+  };
+
+  addToCart(product : any) {
     this.onAddToCartClick.emit(this.clickedProductsArr);
+    this.onButtonClick.emit(this.productsArrLength);
+    if(this.productsArrLength === 0) {
+      this.clickedProductsArr = [];
+      this.clickedProductsArr.push(product);
+      this.productsArrLength = this.productsArrLength + 1;
+      localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
+      localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
+      this.onButtonClick.emit(this.productsArrLength);
+    } else if (this.productsArrLength > 0) {
+      let clickedProductsStorage : any = localStorage.getItem('clickedProductsArr');
+      this.clickedProductsArr = JSON.parse(clickedProductsStorage);
+      this.clickedProductsArr.push(product);
+      this.productsArrLength = this.productsArrLength + 1;
+      localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
+      localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
+      this.onButtonClick.emit(this.productsArrLength);
+    }
   };
 
   searchProduct(product : any): any {

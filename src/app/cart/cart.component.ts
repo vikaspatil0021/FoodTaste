@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -21,18 +21,18 @@ export class CartComponent implements OnInit {
     this.sendProductsLength.emit($event);
   };
 
+  ngOnInit(): void {
+    let productsArrLength = localStorage.getItem('productsArrLength');
+    if(productsArrLength) {
+      this.cartProductQuantity = JSON.parse(productsArrLength);
+    } else {
+      this.cartProductQuantity = 0;
+    }
+  };
+
   @Input()
   cartProductQuantity : number = 0;
 
   @Input()
   productsArr : Array<any> = [];
-
-  ngOnInit() {
-    let clickedProductsArr : any = localStorage.getItem('clickedProductsArr');
-    if(clickedProductsArr && this.cartProductQuantity !== 0) {
-      this.cartProductQuantity = JSON.parse(clickedProductsArr).length;
-    } else {
-      this.cartProductQuantity = 0;
-    };
-  };
 };
