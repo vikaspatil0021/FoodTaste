@@ -40,11 +40,10 @@ export class AllProductsComponent implements OnInit {
 
   addToCart(product : any) {
     this.onAddToCartClick.emit(this.clickedProductsArr);
-    this.onButtonClick.emit(this.productsArrLength);
     if(this.productsArrLength === 0) {
       this.clickedProductsArr = [];
       this.clickedProductsArr.push(product);
-      this.productsArrLength = this.productsArrLength + 1;
+      this.productsArrLength += 1;
       localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
       localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
       this.onButtonClick.emit(this.productsArrLength);
@@ -52,10 +51,12 @@ export class AllProductsComponent implements OnInit {
       let clickedProductsStorage : any = localStorage.getItem('clickedProductsArr');
       this.clickedProductsArr = JSON.parse(clickedProductsStorage);
       this.clickedProductsArr.push(product);
-      this.productsArrLength = this.productsArrLength + 1;
-      localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
       localStorage.setItem('clickedProductsArr', JSON.stringify(this.clickedProductsArr));
+
+      let productsArrStorage : any = localStorage.getItem('productsArrLength');
+      this.productsArrLength = JSON.parse(productsArrStorage) + 1;
       this.onButtonClick.emit(this.productsArrLength);
+      localStorage.setItem('productsArrLength', JSON.stringify(this.productsArrLength));
     }
   };
 
