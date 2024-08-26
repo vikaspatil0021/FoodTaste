@@ -23,7 +23,7 @@ export class CartPageComponent implements OnInit {
     if(clickedProductsArr) {
       this.productsArr = JSON.parse(clickedProductsArr);
       this.productsArr.forEach((product : any)=> {
-        this.subtotalPrice += product.price;
+        this.subtotalPrice += Math.round(product.price);
       })
     }
     this.productsArrLength = this.productsArr.length;
@@ -36,7 +36,7 @@ export class CartPageComponent implements OnInit {
     let productIndex = this.productsArr.indexOf(product);
     this.productsArr.splice(productIndex, 1);
     localStorage.setItem('clickedProductsArr', JSON.stringify(this.productsArr));
-    this.subtotalPrice -= product.price;
+    this.subtotalPrice -= Math.round(product.price);
   };
 
   toggleCartPage() {

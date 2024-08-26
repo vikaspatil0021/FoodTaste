@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Injectable, Input, OnInit, Output } from '@angular/core';
 import  API  from 'src/app/api.json';
+import { CartComponent } from '../cart/cart.component';
 
 @Injectable()
 
