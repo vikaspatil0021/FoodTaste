@@ -20,7 +20,7 @@
     {
         "id": 3,
         "title": "Lemon Cake",
-        "price": "35",
+        "price": 35,
         "category": "Cakes",
         "description": "Four layers of vanilla cake filled with fresh lemon curd, frosted with vanilla buttercream. Available in 6 or 9 sizes.",
         "image": "assets/WebP/Lemon Cake.webp"
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "title": "Coconut Cake",
-        "price": "65",
+        "price": 65,
         "category": "Cakes",
         "description": "Vanilla cake layered with pineapple accented coconut filling & topped with fluffy coconut buttercream & shredded coconut. Available in 6 or 9 sizes.",
         "image": "assets/WebP/Coconut Cake.webp"
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "title": "Carrot Cake",
-        "price": "80",
+        "price": 80,
         "category": "Cakes",
         "description": "Baked with pecans & golden raisins, layered with our unique “praline filling” & topped with traditional cream cheese frosting. Available in 6 or 9 sizes.",
         "image": "assets/WebP/Carrot Cake.webp"
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "title": "Lemonade Cupcake",
-        "price": "15",
+        "price": 15,
         "category": "Cupcakes",
         "description": "Get ready to taste the ultimate summer treat: our Strawberry Lemonade Cupcake! Fresh strawberries folded into our vanilla cake batter giving it that irresistible fruity twist.",
         "image": "assets/WebP/Lemonade Cupcake.webp"
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "title": "Strawberry Cupcake",
-        "price": "20",
+        "price": 20,
         "category": "Cupcakes",
         "description": "Indulge in the deliciously sweet and tangy flavors of our Strawberry Cupcake! Made with a fluffy vanilla cupcake base, this irresistible treat is frosted with luscious strawberry buttercream",
         "image": "assets/WebP/Strawberry Cupcake.webp"
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "title": "Mocha Cupcake",
-        "price": "4.99",
+        "price": 4.99,
         "category": "Cupcakes",
         "description": "Moist chocolate cupcake made with semi-sweet chocolate chips, frosted with real coffee-infused buttercream. — $4.99 each",
         "image": "assets/WebP/Mocha Cupcake.webp"
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "title": "Peanut Cupcake",
-        "price": "8.99",
+        "price": 8.99,
         "category": "Cupcakes",
         "description": "Delectable chocolate cupcake frosted with creamy peanut butter buttercream. — $8.99 each",
         "image": "assets/WebP/Peanut Cupcake.webp"
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "title": "Mint Cupcake",
-        "price": "9.99",
+        "price": 9.99,
         "category": "Cupcakes",
         "description": "Rich chocolate cupcake made with semi-sweet chocolate chips, frosted with natural peppermint buttercream — $9.99 each",
         "image": "assets/WebP/Mint Cupcake.webp"
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "title": "Chocolate Cupcake",
-        "price": "14",
+        "price": 14,
         "category": "Cupcakes",
         "description": "Rich, dense chocolate cupcake topped with vanilla white buttercream. Made without gluten — $14 each",
         "image": "assets/WebP/Chocolate Cupcake.webp"
@@ -101,7 +101,7 @@
     {
         "id": 12,
         "title": "Gender Cupcake",
-        "price": "18.99",
+        "price": 18.99,
         "category": "Cupcakes",
         "description": "Boy or Girl? Find out when you cut (or bite into) the cupcake! 4-box of cupcakes with your choice of SusiePink or SusieBlue buttercream on the inside.",
         "image": "assets/WebP/Gender Cupcake.webp"
@@ -110,7 +110,7 @@
     {
         "id": 13,
         "title": "Chocolate Icecream",
-        "price": "5",
+        "price": 5,
         "category": "Icecreams",
         "description": "Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
         "image": "assets/WebP/Chocolate Icecream.webp"
@@ -119,7 +119,7 @@
     {
         "id": 14,
         "title": "Vanilla Icecream",
-        "price": "10",
+        "price": 10,
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, cream cheese icing, birthday cake bits, rainbow sprinkles",
         "image": "assets/WebP/Vanilla Icecream.webp"
@@ -128,7 +128,7 @@
     {
         "id": 15,
         "title": "Coconut Icecream",
-        "price": "15",
+        "price": 15,
         "category": "Icecreams",
         "description": "Coconut soft serve ice cream, shredded toasted coconut, dark chocolate sauce",
         "image": "assets/WebP/Coconut Icecream.webp"
@@ -137,7 +137,7 @@
     {
         "id": 16,
         "title": "Cookies Icecream",
-        "price": "11.99",
+        "price": 11.99,
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, Oreo cookies, chocolate chip cookies, Fudgee-o cookies, cookie dough chunks",
         "image": "assets/WebP/Cookies Icecream.webp"
@@ -146,7 +146,7 @@
     {
         "id": 17,
         "title": "Hazelnut Icecream",
-        "price": "3",
+        "price": 3,
         "category": "Icecreams",
         "description": "Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios",
         "image": "assets/WebP/Hazelnut Icecream.webp"
@@ -155,7 +155,7 @@
     {
         "id": 18,
         "title": "Cotton Icecream",
-        "price": "20",
+        "price": 20,
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles",
         "image": "assets/WebP/Cotton Icecream.webp"
@@ -164,7 +164,7 @@
     {
         "id": 19,
         "title": "Velvet Icecream",
-        "price": "13.99",
+        "price": 13.99,
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, red velvet cake, cream cheese icing, raspberry sauce, red berry crumble",
         "image": "assets/WebP/Velvet Icecream.webp"
@@ -173,7 +173,7 @@
     {
         "id": 20,
         "title": "Peanut Icecream",
-        "price": "7",
+        "price": 7,
         "category": "Icecreams",
         "description": "Vanilla soft serve ice cream, peanut butter sauce, caramel sauce, chocolate peanut crumble, chocolate sauce",
         "image": "assets/WebP/Peanut Icecream.webp"

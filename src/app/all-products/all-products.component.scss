@@ -85,3 +85,12 @@
         }
     }
 }
+@media screen and (max-width: 425px) {
+    .allProducts {
+        .product {
+            &__img {
+                height: 300px;
+            }
+        }
+    }
+}
