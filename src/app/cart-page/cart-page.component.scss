@@ -14,7 +14,7 @@
         height: 100%;
         width: 600px;
         border-top-left-radius: 15px;
-        background: rgba(0, 0, 0, 0.920);
+        background: #121212;
         color: white;
         .heading {
             display: flex;
@@ -94,7 +94,7 @@
                 position: sticky;
                 padding: 25px;
                 width: 100%;
-                background: black;
+                background: #0a0a0a;
                 &__text {
                     font-size: 1.1rem;
                 }

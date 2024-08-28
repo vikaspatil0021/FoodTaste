@@ -1,5 +1,5 @@
 <div class="allProducts">
-    <div class="product" *ngFor="let product of products" [ngStyle]="{display: searchProduct(product)}">
+    <div class="product" *ngFor="let product of products" [ngStyle]="{display: searchProduct(product)}" id="{{ product.id }}">
         <img class="product__img" alt="" src="{{product.image}}" loading="lazy">
         <div class="product__text">
             <h2 class="title">{{product.title}}</h2>
