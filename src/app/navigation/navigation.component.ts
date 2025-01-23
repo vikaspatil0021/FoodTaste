@@ -8,7 +8,7 @@ import { OnInit } from '@angular/core';
 })
 
 export class NavigationComponent implements OnInit {
-  searchValue : string = 'lemon';
+  searchValue : string = '';
   products : any;
   regex : RegExp = /[^A-Z ]/gi;
 
